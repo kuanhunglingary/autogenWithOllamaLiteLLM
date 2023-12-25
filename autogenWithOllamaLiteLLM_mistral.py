@@ -28,7 +28,7 @@ Otherwise, reply CONTINUE, or the reason why the task is not solved yet."""
 )
 
 task="""
-Tell me a joke
+Tell me a ghost story
 """
 
 groupchat = autogen.GroupChat(agents=[user_proxy, assistant], messages=[], max_round=12)

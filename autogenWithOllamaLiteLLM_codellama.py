@@ -2,7 +2,7 @@ import autogen
 
 config_list_codellama = [
     {
-        'base_url': "http://0.0.0.0:10906",  # litellm --model ollama/codellama
+        'base_url': "http://0.0.0.0:38372",  # litellm --model ollama/codellama
         'api_key': "NULL"
     }
 ]
@@ -28,7 +28,7 @@ Otherwise, reply CONTINUE, or the reason why the task is not solved yet."""
 )
 
 task="""
-Write a python script to output numbers 1 to 100 and then the user_proxy agent should run the script
+Write a python script to create and then the user_proxy agent should run the script
 """
 
 groupchat = autogen.GroupChat(agents=[user_proxy, coder], messages=[], max_round=12)
